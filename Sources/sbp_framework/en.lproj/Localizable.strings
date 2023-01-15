@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  sbp_framework
+
+  Created by Sergey Panov on 03.10.2022.
+  
+*/
+
+widget_title = "Select Bank";
+search_placeholder = "Search";
+search_cancel = "Cancel";
+default_button_text = "Select default bank";
+search_help_button_text = "There is no your bank?";
+recent_banks = "Recent";
+all_banks = "All banks";
+bank_not_found = "Bank not found";

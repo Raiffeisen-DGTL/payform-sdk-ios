@@ -1,0 +1,27 @@
+stages:
+  - verify
+  - deploy
+
+include:
+  - project: 'acquiring/devops/pipelines'
+    ref: master
+    file: '.checkmarx-java.yml'
+
+variables:
+  APP_NAME: payform-sdk-ios
+  VERSION: 1.0.$CI_PIPELINE_IID
+
+checkmarx:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+push:
+  stage: deploy
+  script:
+    - git config --global user.email $OPEN_SOURCE_GITHUB_EMAIL
+    - git config --global user.name $OPEN_SOURCE_GITHUB_LOGIN
+    - git tag $VERSION
+    - git push https://$OPEN_SOURCE_GITHUB_LOGIN:$OPEN_SOURCE_GITHUB_TOKEN@github.com/Raiffeisen-DGTL/$APP_NAME.git HEAD:main --force
+    - git push origin $VERSION
+  only:
+    - main

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  sbp_framework
+
+  Created by Sergey Panov on 03.10.2022.
+  
+*/
+
+widget_title = "Выберите банк";
+search_placeholder = "Поиск";
+search_cancel = "Отменить";
+default_button_text = "Выбрать банк по умолчанию";
+search_help_button_text = "Не нашли свой банк?";
+recent_banks = "Недавние";
+all_banks = "Все банки";
+bank_not_found = "Банк не найден";
