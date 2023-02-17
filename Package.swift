@@ -25,6 +25,7 @@ let package = Package(
         .target(
             name: "sbp_framework",
             dependencies: [],
+            exclude: ["extensions/Cocoapods+Bundle+Extensions.swift"],
             resources: [
                 .process("supported_files"),
                 .process("Resources")]),

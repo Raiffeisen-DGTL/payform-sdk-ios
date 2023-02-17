@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49858B1A292761AD00947A39 /* Raiffeisen SBP SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 49858B19292761AD00947A39 /* Raiffeisen SBP SDK */; };
 		ABF9C844F50BA60D036FC0C0 /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24AB31566FE0076610E28E2 /* Pods_example.framework */; };
 		ECBA26BD28F3D799002B7F04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECBA26BC28F3D799002B7F04 /* GoogleService-Info.plist */; };
 		ECC1C87A28EE857B004121C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC1C87928EE857B004121C0 /* AppDelegate.swift */; };
@@ -31,7 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		49BDEF6629262E7500E010CE /* sbp-sdk-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "sbp-sdk-ios"; path = ..; sourceTree = "<group>"; };
+		49F2BCAE299E0741005F5541 /* sbp-sdk-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "sbp-sdk-ios"; path = ..; sourceTree = "<group>"; };
 		9AC1965809EEF71650BF5824 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		BA2100D638240186AA023381 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 		E24AB31566FE0076610E28E2 /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF9C844F50BA60D036FC0C0 /* Pods_example.framework in Frameworks */,
-				49858B1A292761AD00947A39 /* Raiffeisen SBP SDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +61,7 @@
 		49E7673B292375E500957E55 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				49BDEF6629262E7500E010CE /* sbp-sdk-ios */,
+				49F2BCAE299E0741005F5541 /* sbp-sdk-ios */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -131,15 +129,13 @@
 				ECC1C87328EE857B004121C0 /* Frameworks */,
 				ECC1C87428EE857B004121C0 /* Resources */,
 				ECDF2C282910F30C00975EDD /* Embed Frameworks */,
+				6DA3857EF966FF7D4BD065C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = example;
-			packageProductDependencies = (
-				49858B19292761AD00947A39 /* Raiffeisen SBP SDK */,
-			);
 			productName = example;
 			productReference = ECC1C87628EE857B004121C0 /* example.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +209,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA3857EF966FF7D4BD065C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-example/Pods-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-example/Pods-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-example/Pods-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECC1C8A928EE8592004121C0 /* configure plist with app keys */ = {
@@ -473,13 +486,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		49858B19292761AD00947A39 /* Raiffeisen SBP SDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = "Raiffeisen SBP SDK";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC1C86E28EE857B004121C0 /* Project object */;
 }

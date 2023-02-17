@@ -6,6 +6,8 @@
 
 1.    Добавьте фреймворк в проект
 
+#### Swift Package Manager
+
 Для подключения данного фреймворка в проект используется Swift Package Manager.
 
 - В меню Xcode выбираем File -> Add Packages...
@@ -15,6 +17,17 @@
 - Нажимаем кнопку Add Package. 
 
 После этого фреймворк можно использовать. 
+
+#### CocoaPods
+
+Вы можете использовать [CocoaPods](http://cocoapods.org/) для подключения фреймворка, для этого добавте в `Podfile`:
+
+```ruby
+platform :ios, '13.0'
+use_frameworks!
+pod 'sbp_framework'
+```
+
 
 2.    Настройте конфигурацию info.plist:
 
