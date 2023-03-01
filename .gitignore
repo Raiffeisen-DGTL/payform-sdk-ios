@@ -31,9 +31,3 @@ IDEWorkspaceChecks.plist
 .swiftpm/config/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
