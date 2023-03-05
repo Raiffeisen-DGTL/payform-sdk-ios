@@ -6,5 +6,6 @@ target 'example' do
   use_frameworks!
 
   # Pods for example
+  pod 'sbp_framework', :path => '..'
 
 end
