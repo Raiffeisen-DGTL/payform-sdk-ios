@@ -27,7 +27,7 @@ let package = Package(
             dependencies: [],
             exclude: ["extensions/Cocoapods+Bundle+Extensions.swift"],
             resources: [
-                .process("supported_files"),
-                .process("Resources")]),
+                .process("Resources")]
+        )
     ]
 )
