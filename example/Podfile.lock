@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 2d9f20d9c5b9c14859030e35f96c8da85cd11b0d
+PODS:
+  - sbp_framework (1.0.0)
+
+DEPENDENCIES:
+  - sbp_framework (from `..`)
+
+EXTERNAL SOURCES:
+  sbp_framework:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  sbp_framework: 6472214dfb46b086f637f524243240a0bbffadfa
+
+PODFILE CHECKSUM: d3b747c8a8488cb68f16d88f1cf2d42c0ec92a4c
 
 COCOAPODS: 1.11.3
