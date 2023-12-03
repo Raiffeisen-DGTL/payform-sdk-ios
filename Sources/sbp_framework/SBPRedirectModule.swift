@@ -31,7 +31,7 @@ public class SBPRedirectModule {
     public typealias CompletionHandler = (SBPResult) -> ()
     
     private var completion: CompletionHandler?
-    private var sbpViewController: SBPViewController?
+    private weak var sbpViewController: SBPViewController?
     
     public init(link: String, completion: @escaping CompletionHandler) {
         self.completion = completion
